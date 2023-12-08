@@ -1,0 +1,240 @@
+/* Carousel container styles */
+#hobbyCarousel {
+  max-width: 1000px; /* Adjust the width as needed */
+  margin: 0 auto; /* Center the carousel horizontally */
+}
+
+/* Carousel item styles */
+#hobbyCarousel .carousel-item {
+  width: 100%;
+}
+
+/* Carousel image sizes */
+#hobbyCarousel .carousel-item img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+/* Optionally, add this if you want the captions to be centered */
+#hobbyCarousel .carousel-caption {
+  text-align: center;
+}
+
+
+#front {
+  /* Remove unnecessary properties */
+  background-image: url(images/Billede.png);
+  background-size: 100% 600px; /* Set the background size to cover the width and have a height of 695px */
+  background-position: center;
+  background-color: white;
+  font-family: "cormorant garamond";
+  background-repeat: no-repeat;
+  height: 600px; /* Set the height to 695px */
+  margin: 0 0;
+}
+
+body {
+  /*background-color: #f4ebe5;*/
+  background-image: linear-gradient(to bottom, #f4ebe5, #ceddec, rgb(160, 191, 226));
+  font-family: "cormorant garamond";
+}
+
+h2 {
+    text-transform: uppercase;
+    font-family: "cormorant garamond";
+}
+
+p {
+    margin-bottom: 100px;
+}
+
+.text-no-gap {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    left: 0;
+    top: 0;
+    gap: 10px;
+    padding: 10px 10%;
+    background-color: #f4ebe5;
+}
+
+.nav-link {
+    color: #736a69;
+    font-size: 20px;
+    font-weight: 300;
+    transition: 0.3s;
+}
+
+.nav-item {
+    padding: 0 10px;
+}
+
+.nav-link:link {
+    color: black;
+  }
+.nav-link:visited {
+    color: #717171;
+  }
+.nav-link:active {
+    color: black;
+  }
+.nav-link:hover {
+    color: darkgrey;
+    transform: scale(1.1);
+  }
+
+/* Portfolio text */
+.waviy {
+    position: relative;
+    padding: 3cm;
+    padding-top: 5.2cm;
+    margin-left: 2%;
+    font-weight: 300;
+    font-family: "cormorant garamond";
+    text-align: center;
+
+  }
+  .waviy span {
+    position: relative;
+    display: inline-block;
+    font-size: 180px;
+    color: #5d5555;
+    text-transform: uppercase;
+    animation: flip 2s infinite;
+    animation-delay: calc(0.2s * var(--i));
+    padding: 0;
+  }
+
+  @media screen and (max-width: 1300px) {
+    .waviy span {
+      font-size: 100px; /* Adjust the font size for smaller screens */
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .waviy span {
+      font-size: 50px; /* Adjust the font size for smaller screens */
+    }
+  }
+
+  @keyframes flip {
+    0%,
+    80% {
+      transform: rotateY(360deg);
+    }
+  }
+
+/* Personal image */
+.img-centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+/* Resume button */
+.pdf-button {
+  background-color: rgba(51, 51, 51, 0.13);
+  border-radius: 8px;
+  border-width: 5px;
+  color: #333333;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: "cormorant garamond";
+  font-size: 14px;
+  line-height: 20px;
+  list-style: none;
+  padding: 20px 22px;
+  text-align: center;
+  vertical-align: baseline;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+}
+
+.pdf-button:hover {
+  background-color: rgba(51, 51, 51, 0.2);
+  text-decoration: none;
+  transform: scale(1.1);
+}
+
+#about-list {
+    text-align: center;
+}
+
+ul {
+    display: inline-block;
+    text-align: left;
+}
+
+h6 {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.project-button {
+  background-color: rgba(51, 51, 51, 0.09);
+  /*border: 2px solid #5c5757;*/
+  border-radius: 8px;
+  color: black;
+  font-family: "cormorant garamond";
+  padding: 50px 70px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  margin: 10px auto 30px 50px;
+  cursor: pointer;
+}
+
+.project-button:hover {
+  background-color: rgba(51, 51, 51, 0.2);
+  transform: scale(1.1);
+  color: #333333;
+  text-decoration: none;
+}
+
+ul.projects-list {
+  text-align: center;
+  list-style-type: none;
+  max-width: 800px;
+  display: inline-block; 
+  
+}
+
+/* Horizontal line */
+hr {
+  border: 0;
+  height: 1px;
+  background: #333333;
+  width: 100%;
+  padding: 0;
+}
+
+div.projects-list {
+  text-align: center;
+}
+
+/* Footer */
+#footer {
+  padding: 7% 15%;
+  text-align: center;
+}
+
+.social-icon {
+  margin-bottom: 1rem;
+  padding-right: 2%;
+}
